@@ -1,1 +1,1 @@
-# Embedded-Linux-Deploma
+# Embedded-Linux-Diploma
