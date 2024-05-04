@@ -57,10 +57,10 @@ $ strace -s 4 -f -o ./o1.txt ./a.out
 ```
 
 ``` bash
-24670 pread64(3, "\6\0\0\0"..., 784, 64) = 784 --> limit the length of the strings to print
-24670 --> is the process id
+24670 pread64(3, "\6\0\0\0"..., 784, 64) = 784 #>>limit the length of the strings to print
+24670 #>> is the process id
 ..
-24671 --> is the child process id
+24671 #>> is the child process id
 ```
 
 ``` bash
@@ -69,9 +69,9 @@ $ strace -s 100 -f -o ./o2.txt ./a.out
 ``` bash
 
 24755 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
-24755 --> is the process id
+24755 #>> is the process id
 ..
-24756 --> is the child process id
+24756 #>> is the child process id
 ```
 
 ### Code Example:
