@@ -64,7 +64,10 @@ $ strace -s 4 -f -o ./o1.txt ./a.out
 ```
 
 ``` bash
-$ strace -s 100 -f -o ./o2.txt ./a.out 
+$ strace -s 100 -f -o ./o2.txt ./a.out
+```
+``` bash
+
 24755 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
 24755 --> is the process id
 ..
