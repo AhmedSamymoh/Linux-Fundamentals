@@ -48,9 +48,9 @@ User ID: 0
 ``` bash
 $ strace -s 100 -f -o ./o.txt ./a.out
 ```
-> strace -s : limit the length of the strings to print
-> strace -f : trace the child process as well
-> strace -o : write the output to a file
+- strace -s : limit the length of the strings to print
+- strace -f : trace the child process as well
+- strace -o : write the output to a file
 
 ``` bash
 $ strace -s 4 -f -o ./o1.txt ./a.out 
