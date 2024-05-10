@@ -86,13 +86,13 @@ int main(){
     uint32_t child_id = fork();
     if(child_id == 0){
         // child process
-        //sleep(5);
+        sleep(200);
     }else{
         // parent process
         std::cout<<"Child Process ID: "<< id << std::endl;  
         std::cout<<"Parent Process ID: "<< ppid << std::endl;
         std::cout<<"User ID: " << uid << std::endl;
-        //sleep(5);
+        sleep(200);
     }   
 
 
