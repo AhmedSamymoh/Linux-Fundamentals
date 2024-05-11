@@ -65,9 +65,26 @@ $ top -b -n 2 -d 0.2 -p 6962 | tail -1 | awk '{print $9}'
 
 2- **the *main* task Actually is Second Task :extract core-dump (tracing file) for this process :**
 
+- To get the core-dump file we should ``$ kill`` the process with signal ``SIGQUIT`` as it requests controlled termination with core dump, aiding debugging by capturing program state.
 
+```bash
+kill -QUIT <PID>
+```
+- Now we got :
+```bash 
 
-# Process Stack
+Hello from process
+Hello from process
+Hello from process
+Hello from process
+Quit (core dumped)
+```
+- And i got core-dump ``core.process.10902. ``
+
+---
+---
+
+## Process Stack
 ----
 
 ### Assign Priority:

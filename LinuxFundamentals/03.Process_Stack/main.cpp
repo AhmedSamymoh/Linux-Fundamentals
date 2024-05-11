@@ -8,7 +8,12 @@
 using namespace std;
 using namespace std::chrono_literals;
 
-
+/*
+* Busy-wait loop
+* generating random numbers and accumulating them in a volatile variable result.
+* This function is intended to consume CPU cycles.
+*
+*/
 void loadCPU() {
 
     volatile double result = 0;
