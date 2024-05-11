@@ -1,7 +1,7 @@
-## Process Management Stack: Use Case
+# Process Management Stack: Use Case
 ---
 
-1- **First Let's Figure out those dummy commands**:
+### 1- **First Let's Figure out those dummy commands**:
 
 ```bash
 g++ main.cpp -g -o process
@@ -27,7 +27,7 @@ include process name, PID, and timestamp.
 
 ---
 
-2- **Lets Go with the first task to check the CPU load for the system, after running the process software**
+### 2- **Lets Go with the first task to check the CPU load for the system, after running the process software**
 
 - Actully We Could Use ```$ top ``` 
 
@@ -63,7 +63,7 @@ $ top -b -n 2 -d 0.2 -p 6962 | tail -1 | awk '{print $9}'
 - ``awk '{print $9}'``: the 9-th column(the cpu usage number)
 ---
 
-2- **the *main* task Actually is Second Task :extract core-dump (tracing file) for this process :**
+### 3- **the *main* task Actually is Second Task :extract core-dump (tracing file) for this process :**
 
 - To get the core-dump file we should ``$ kill`` the process with signal ``SIGQUIT`` as it requests controlled termination with core dump, aiding debugging by capturing program state.
 
