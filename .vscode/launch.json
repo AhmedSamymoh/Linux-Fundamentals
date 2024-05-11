@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/sami/Desktop/Git/Embedded-Linux-Diploma/LinuxFundamentals/01.Linux_SystemArchitecture",
-      "program": "/home/sami/Desktop/Git/Embedded-Linux-Diploma/LinuxFundamentals/01.Linux_SystemArchitecture/build/Debug/outDebug",
+      "cwd": "/home/sami/Desktop/Git/Embedded-Linux-Diploma/LinuxFundamentals/02.SystemCall_Interface/src",
+      "program": "/home/sami/Desktop/Git/Embedded-Linux-Diploma/LinuxFundamentals/02.SystemCall_Interface/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
