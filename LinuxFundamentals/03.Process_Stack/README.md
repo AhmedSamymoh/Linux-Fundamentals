@@ -79,7 +79,7 @@ Hello from process
 Hello from process
 Quit (core dumped)
 ```
-- And i got core-dump ``core.process.10902. ``
+- And finally, I got core-dump file ``core.process.10902. ``
 
 ---
 ---
