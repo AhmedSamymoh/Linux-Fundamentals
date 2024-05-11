@@ -1,7 +1,7 @@
 # Process Management Stack: Use Case
 ---
 
-### 1- **First Let's Figure out those dummy commands**:
+### 1- **First Let's Figure out those foggy commands**:
 
 ```bash
 g++ main.cpp -g -o process
