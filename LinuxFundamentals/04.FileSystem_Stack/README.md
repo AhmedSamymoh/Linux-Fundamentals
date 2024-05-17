@@ -42,7 +42,7 @@ $ tree
     └── content.txt
 ```
 ---
-## 1- Create Symbolic link and Hard link:
+## 2- Create Symbolic link and Hard link:
 
 ![1](./assests/1.jpg)
 
