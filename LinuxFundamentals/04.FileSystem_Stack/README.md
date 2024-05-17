@@ -76,10 +76,10 @@ Hello from HardLink
 Hello from HardLink
 
 ```
-
+---
 - to Create a `` symbolic link ``to a file or directory:
 
----
+
 
 ``` bash
 ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}
@@ -90,11 +90,11 @@ ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}
 ├── rootSoft.txt
 └── secSoft.txt -> rootSoft.txt
 ```
-
+---
 ![2](./assests/2.png)
-
+---
 >**In Linux, the size of a symbolic link is typically larger than the size of the target file it points to. The reason for this is that a symbolic link contains ``the path or relative path to the target file``, and that path information takes up space.**
-
+---
 
 
 - ``$ stat rootSoft.txt``
