@@ -3,6 +3,33 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+int main(){
+    
+    uint32_t id = getpid();
+    uint32_t ppid = getppid();
+    uint32_t uid = getuid();
+
+    // get the child process id
+    uint32_t child_id = fork();
+    if(child_id == 0){
+        // child process
+        sleep(200);
+    }else{
+        // parent process
+        std::cout<<"Child Process ID: "<< id << std::endl;  
+        std::cout<<"Parent Process ID: "<< ppid << std::endl;
+        std::cout<<"User ID: " << uid << std::endl;
+        sleep(200);
+    }   
+
+
+
+
+    return 0;
+}
+
+
+
 /*
 $ Strace : trace system calls and signals
 
@@ -75,28 +102,3 @@ $ strace -s 100 -f -o ./o2.txt ./a.out
 
  */
 
-
-int main(){
-    
-    uint32_t id = getpid();
-    uint32_t ppid = getppid();
-    uint32_t uid = getuid();
-
-    // get the child process id
-    uint32_t child_id = fork();
-    if(child_id == 0){
-        // child process
-        sleep(200);
-    }else{
-        // parent process
-        std::cout<<"Child Process ID: "<< id << std::endl;  
-        std::cout<<"Parent Process ID: "<< ppid << std::endl;
-        std::cout<<"User ID: " << uid << std::endl;
-        sleep(200);
-    }   
-
-
-
-
-    return 0;
-}
