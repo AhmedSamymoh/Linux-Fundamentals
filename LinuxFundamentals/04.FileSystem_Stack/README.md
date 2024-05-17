@@ -44,7 +44,7 @@ $ tree
 ---
 ## 1- Create Symbolic link and Hard link:
 
-![1](./assests/1.png)
+![1](./assests/1.jpg)
 
 
 
