@@ -1,0 +1,2 @@
+       /boot  Contains  static  files  for  the boot loader.  This directory holds only the files which are needed during the boot process.  The map in‐
+              or /boot.

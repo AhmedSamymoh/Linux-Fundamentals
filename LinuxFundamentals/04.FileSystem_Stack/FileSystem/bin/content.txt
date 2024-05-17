@@ -1,0 +1,3 @@
+ /bin   This directory contains executable programs which are needed in single user mode and to bring the system up or repair it.
+              staller and configuration files should go to /sbin and /etc.  The operating system kernel (initrd for example) must be located in either /
+              These directories are variants of /lib on system which support more than one binary format requiring separate libraries (optional).

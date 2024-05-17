@@ -1,0 +1,1 @@
+ /lib   This directory should hold those shared libraries that are necessary to boot the system and to run the commands in the root filesystem.

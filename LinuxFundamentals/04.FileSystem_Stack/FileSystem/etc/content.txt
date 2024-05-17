@@ -1,0 +1,4 @@
+              staller and configuration files should go to /sbin and /etc.  The operating system kernel (initrd for example) must be located in either /
+       /etc   Contains  configuration  files which are local to the machine.  Some larger software packages, like X11, can have their own subdirectories
+              below /etc.  Site-wide configuration files may be placed here or in /usr/etc.  Nevertheless, programs should always look for  these  files
+              in /etc and you may have links for these files to /usr/etc.

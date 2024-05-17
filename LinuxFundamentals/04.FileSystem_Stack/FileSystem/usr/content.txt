@@ -1,0 +1,2 @@
+ /usr   This directory is usually mounted from a separate partition.  It should hold only shareable, read-only data, so that it can be mounted  by
+        various machines running Linux.
