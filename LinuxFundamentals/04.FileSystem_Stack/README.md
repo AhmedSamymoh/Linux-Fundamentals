@@ -1,6 +1,5 @@
 # FileSystem Stack: Use Case
-
----
+2---
 
 ## 1- Create FHS (File Hierarchy Standard) Directories:
 
@@ -27,7 +26,7 @@ man hier |less | grep <DIR>
 - **``/boot``** : Contains  static  files  for  the boot loader.  This directory holds only the files which are needed during the boot process.  The map in‐
 or /boot.
 
-```bash
+```shell
 $ tree
 
 ├── bin
@@ -44,7 +43,7 @@ $ tree
 ---
 ## 1- Create Symbolic link and Hard link:
 
-![1](./assests/1.png)
+![1](./assests/1.jpg)
 
 
 
@@ -125,7 +124,7 @@ ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}
 ---
 - ``$ stat``
 
-```bash
+```shell
 sami@linux:~/Downloads$ stat ./Binary 
   File: ./Binary
   Size: 18136     	Blocks: 40         IO Block: 4096   regular file
@@ -145,3 +144,37 @@ udev           2001367   756 2000611    1% /dev
 ```
 
 > Now we see Inodes: ``Inode: 1336431 `` , ``Inodes 2001367``
+
+
+----
+----
+
+## Creating Partitions and Primary FileSystem:
+
+- First we should know the name of SD Card (ex. /dev/sda) by using ``$ lsblk`` 
+
+```bash
+$ lsblk
+sdc               8:32   1   3.7G  0 disk 
+├─ sdc1           8:32   1   3.7G  0 disk 
+```
+> Acutally we got SD Card ``3.7`` Gbyte Here 
+
+- Now lets figure out ``$ fdisk`` Do
+
+```shell
+sami@linux:~/Desktop/SDCard$ sudo fdisk /dev/sdc 
+
+Welcome to fdisk (util-linux 2.34).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+
+Command (m for help):
+```
+
+- for creating partition using ``$ fdisk``  we can use:
+
+```bash
+sudo fdisk /dev
+```

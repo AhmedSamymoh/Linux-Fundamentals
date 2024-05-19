@@ -27,9 +27,9 @@ void loadCPU() {
 int main ()
 {
     std::srand(std::time(nullptr));
-	while (true)
+    while (true)
     {
-        
+    
         int delay = std::rand() % 1 + 100;
 
         loadCPU();
