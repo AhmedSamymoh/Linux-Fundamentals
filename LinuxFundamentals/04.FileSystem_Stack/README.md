@@ -1,5 +1,5 @@
 # FileSystem Stack: Use Case
-2---
+---
 
 ## 1- Create FHS (File Hierarchy Standard) Directories:
 
