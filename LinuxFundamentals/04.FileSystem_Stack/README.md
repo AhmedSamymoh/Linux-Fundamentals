@@ -144,40 +144,7 @@ udev           2001367   756 2000611    1% /dev
 ```
 
 > Now we see Inodes: ``Inode: 1336431 `` , ``Inodes 2001367``
-<<<<<<< HEAD
+
 
 
 ----
-----
-
-## Creating Partitions and Primary FileSystem:
-
-- First we should know the name of SD Card (ex. /dev/sda) by using ``$ lsblk`` 
-
-```bash
-$ lsblk
-sdc               8:32   1   3.7G  0 disk 
-├─ sdc1           8:32   1   3.7G  0 disk 
-```
-> Acutally we got SD Card ``3.7`` Gbyte Here 
-
-- Now lets figure out ``$ fdisk`` Do
-
-```shell
-sami@linux:~/Desktop/SDCard$ sudo fdisk /dev/sdc 
-
-Welcome to fdisk (util-linux 2.34).
-Changes will remain in memory only, until you decide to write them.
-Be careful before using the write command.
-
-
-Command (m for help):
-```
-
-- for creating partition using ``$ fdisk``  we can use:
-
-```bash
-sudo fdisk /dev
-```
-=======
->>>>>>> b1ce5f562148899a3838987a65742dd94109965e
