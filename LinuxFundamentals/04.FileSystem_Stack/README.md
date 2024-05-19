@@ -145,3 +145,10 @@ udev           2001367   756 2000611    1% /dev
 ```
 
 > Now we see Inodes: ``Inode: 1336431 `` , ``Inodes 2001367``
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\text{Last Sector} = n \times \frac{(1024)^3}{512} + \text{First Sector}" alt="Last Sector = n * ((1024)^3)/512 + First sector"/>
+</p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\text{Last Sector} = n \times \frac{(1024)^3}{512} + \text{First Sector}" alt="Last Sector = n * ((1024)^3)/512 + First sector"/>
+</p>
