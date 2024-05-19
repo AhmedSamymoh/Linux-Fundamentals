@@ -41,7 +41,7 @@ $ tree
     └── content.txt
 ```
 ---
-## 1- Create Symbolic link and Hard link:
+## 2- Create Symbolic link and Hard link:
 
 ![1](./assests/1.jpg)
 
@@ -75,10 +75,10 @@ Hello from HardLink
 Hello from HardLink
 
 ```
-
+---
 - to Create a `` symbolic link ``to a file or directory:
 
----
+
 
 ``` bash
 ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}
@@ -89,11 +89,11 @@ ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}
 ├── rootSoft.txt
 └── secSoft.txt -> rootSoft.txt
 ```
-
+---
 ![2](./assests/2.png)
-
+---
 >**In Linux, the size of a symbolic link is typically larger than the size of the target file it points to. The reason for this is that a symbolic link contains ``the path or relative path to the target file``, and that path information takes up space.**
-
+---
 
 
 - ``$ stat rootSoft.txt``
@@ -144,6 +144,7 @@ udev           2001367   756 2000611    1% /dev
 ```
 
 > Now we see Inodes: ``Inode: 1336431 `` , ``Inodes 2001367``
+<<<<<<< HEAD
 
 
 ----
@@ -178,3 +179,5 @@ Command (m for help):
 ```bash
 sudo fdisk /dev
 ```
+=======
+>>>>>>> b1ce5f562148899a3838987a65742dd94109965e
