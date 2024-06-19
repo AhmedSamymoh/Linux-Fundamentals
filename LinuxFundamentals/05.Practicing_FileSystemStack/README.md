@@ -53,7 +53,7 @@ First sector (2048-7821311, default 2048): 2048
 ```
 #### For Creating ``n`` Gbyte we could use this formula:
 
-<img src="../assests/11.png" width="400"/>
+<img src="./assests/11.png" width="400"/>
 
 - as Sector size is **512 Byte** , for example lets try to make it **1 Gb** :
 
@@ -110,7 +110,7 @@ sudo mount -t ext4 /dev/sdc1 ~/Desktop/sdcard/
 
 
  
-> ![11](../assests/3.png)
+> ![11](./assests/3.png)
 
 So first we should do ``3`` directories:
 
