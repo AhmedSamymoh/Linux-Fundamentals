@@ -114,5 +114,8 @@
     "cinttypes": "cpp",
     "typeinfo": "cpp",
     "bit": "cpp"
+  },
+  "files.watcherExclude": {
+    "**/target": true
   }
 }
