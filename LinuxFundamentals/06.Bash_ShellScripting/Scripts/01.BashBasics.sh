@@ -167,8 +167,24 @@ echo
 
 # 4. Outputs:
 # Two types of outputs:
-#                       1. Exit Status: (Run Normally) 0-255 
+#                       1. Exit Status: (Run Normally) 0  - 255 
 #                       2. print stdout : echo, printf, cat, etc.
 
 # echo $? : exit status of the last command. << vip >>
 echo "Exit Status: $?"
+# Display the process ID of the current shell: $$
+echo $$
+
+#for Validation:
+if [[ $? = 0 ]] 
+then
+    echo "Process is successful"
+    exit 0  
+else
+    printf "Process is not successful, exit status: $?"
+fi
+
+
+# Source Command:
+    # source command is used to run the script in the current shell process.
+    # source script_name.sh or . script_name.sh
