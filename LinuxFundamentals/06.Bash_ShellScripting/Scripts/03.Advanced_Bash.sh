@@ -68,8 +68,10 @@ echo "Trimmed: $trimmed"
 
 # --------------------------- Flow Control ---------------------------
 # loops:
-# 1. for loop
-# 2. while loop
+    # 1. for loop
+    # 2. while loop
+# switch case
+# Select --> create user menu
 
 declare -i a=0
 while (( $a<5 )); do
@@ -80,6 +82,7 @@ done
 
 # 1. for loop
 
+# case 1: iterate over directory ----> get files.
 for i in {1..5}; do
     echo "${i}"
 done
@@ -87,3 +90,89 @@ done
 for file in *; do
     echo "${file}"
 done
+
+# case 2: iterate over array of integares.
+# Method 1.
+for i in `seq 3`;do
+    echo "${i}"
+done
+
+# Method 2.
+for((i=0;i<3;((++i)))); do
+    echo "${i}"
+done
+
+#------------------------------------------------------
+
+# switch case
+
+declare os=$1
+
+if [[ ${os} == "Linux" ]]; then
+    echo "Linux"
+elif [[ ${os} == "Windows" ]]; then
+    echo "Windows"
+else 
+    echo "undefined Operatng System"
+fi
+
+
+case "${os}" in
+    linux) #>>>>>>>>>>cas1
+        echo "case: ${os}"
+        ;;
+    windows) #>>>>>>> case2
+        echo "windows"
+        ;;
+    *)  #>>>>>>>default
+        echo "Undefine Operating System"
+        ;;
+esac
+ 
+#------------------------------------------------------
+
+# Select (Testing and Flashing )
+
+# select os in "Linux" "Windows"; do
+#      echo ${os};
+# done
+
+# 1) Linux
+# 2) Windows
+# #? 1
+# Linux
+
+#------------------------------------------------------
+# Processing Files
+#------------------------------------------------------
+
+# 1, read file ---> line by line 
+cat $PWD/test.txt | while read line; do
+    echo "${line}"
+done
+
+while IFS= read -r line; do
+    echo "$line"
+done < test.txt
+
+cat $PWD/test.txt | while read line; do
+    if [[ "${line}" == "linux" ]]; then
+        echo "Linux Kernal"
+    fi
+done
+
+# sami@linux:~$ uname --operating-system 
+# GNU/Linux
+
+
+#-----------------------------------------------------
+
+# 2. Write file -
+    # 2.1 redirection.
+    echo "operating-system:GNU/Linux" > ./file.txt
+
+    # 2.2 append
+    echo "Appeneded Data" >> ./file.txt
+
+
+
