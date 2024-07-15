@@ -1,3 +1,0 @@
-linux:hazem
-Windows:hazem2
-Windows
