@@ -1,0 +1,3 @@
+[submodule "kernel-graduation-project"]
+	path = kernel-graduation-project
+	url = https://github.com/embeddedlinuxworkshop/kernel-graduation-project
