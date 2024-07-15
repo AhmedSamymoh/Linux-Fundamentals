@@ -1,0 +1,4 @@
+[submodule "kernel-graduation-project"]
+	path = kernel-graduation-project
+	url = https://github.com/AhmedSamymoh/kernel-graduation-project
+	branch = main
