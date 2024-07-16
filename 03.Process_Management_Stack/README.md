@@ -33,7 +33,7 @@ include process name, PID, and timestamp.
 
 - But I just Found ``` $ htop ``` with fancy GUI
 
-![2](/LinuxFundamentals/03.Process_Stack/assests/2.png)
+![2](/03.Process_Management_Stack/assests/2.png)
 ---
 - I also found that `` $ ps `` got some nice argu
 ```bash
@@ -42,7 +42,7 @@ ps -C process -o %cpu
 - ``-C`` : allows you to use process name without knowing it's pid.
 - ``-o %cpu``: Specifies the output format to display only the CPU
 
-![3](/LinuxFundamentals/03.Process_Stack/assests/3.jpg)
+![3](/03.Process_Management_Stack/assests/3.jpg)
 
 ---
 ```bash
