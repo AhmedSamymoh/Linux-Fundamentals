@@ -1,4 +1,4 @@
-# Linux Fundamentals
+# Linux Fundamentals 🐧
 
 This repository documents my journey to practice Linux fundamentals, covering topics from system architecture to network stack and bash shell scripting.
 
