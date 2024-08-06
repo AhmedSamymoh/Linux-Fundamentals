@@ -62,6 +62,10 @@ This Bash script organizes files in a specified directory based on their file ex
 # Validation
 
    ```bash
+   ./fileOrganizer.sh /Validation/
+   ```
+
+   ```bash
    
     /home/sami/Desktop/GitWorkspace/Embedded-Linux/LinuxFundamentals/06.Bash_ShellScripting/FileOrganizer/Validation/
     ├── file1.txt
